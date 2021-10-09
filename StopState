@@ -1,0 +1,14 @@
+package windowsstate_builder;
+
+public class StopState implements State{
+
+    @Override
+    public void doAction(Windows window) {
+      // System.out.println("Window is in stop mode ");
+       window.setState(this);
+    }
+    @Override
+    public String toString(){
+        return "Pause State";
+    }
+}
