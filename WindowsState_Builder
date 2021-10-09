@@ -1,0 +1,28 @@
+package windowsstate_builder;
+
+
+public class WindowsState_Builder {
+
+    
+    public static void main(String[] args) {
+        // Builder windows 
+        Windows window=new Windows("Windows 10");
+        //States of windows
+        StartState startstate=new StartState();
+        startstate.doAction(window);
+        System.out.println(window.toString());
+        StopState stopstate=new StopState();
+        stopstate.doAction(window);
+        System.out.println(window.toString());
+        // Builder windows
+        Windows window2=new Windows("Windows 7");
+        //States of windows
+        startstate=new StartState();
+        startstate.doAction(window2);
+        System.out.println(window2.toString());
+        stopstate=new StopState();
+        stopstate.doAction(window2);
+        System.out.println(window2.toString());
+    }
+    
+}
