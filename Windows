@@ -1,0 +1,31 @@
+package windowsstate_builder;
+
+
+public class Windows {
+    String type;
+    State startstate;
+    State stopstate;
+    
+     private State state;
+    public Windows(String name){
+        this.type=name;
+      state=null;  
+    }
+    public void setState(State state){
+        this.state=state;
+    }
+     public State getState(){
+        return this.state;
+    }
+     public State getstartState(){
+        return this.startstate;
+    }
+     public State getstopState(){
+        return this.stopstate;
+    }
+    @Override
+   public String toString()
+   {
+       return "Window is of type : "+this.type+"\n"+"In "+this.getState();
+   }
+}
