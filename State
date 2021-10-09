@@ -1,0 +1,6 @@
+package windowsstate_builder;
+
+
+public interface State {
+     public void doAction(Windows window);
+}
